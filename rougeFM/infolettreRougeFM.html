@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Infolettre Rouge Montréal</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Please use an inliner tool to convert all CSS to inline as inpage or external CSS is removed by email clients -->
+    <!-- important in CSS is used to prevent the styles of currently inline CSS from overriding the ones mentioned in media queries when corresponding screen sizes are encountered -->
+    <!-- CSS Reset -->
+    <style type="text/css">
+      /* What it does: Remove spaces around the email design added by some email clients. */
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      img {
+        max-width: 100%;
+      }
+      html,
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        /*	height: 100% !important;*/
+        width: 100% !important;
+      }
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+      /* What it does: Forces Outlook.com to display emails full width. */
+      .ExternalClass {
+        width: 100%;
+      }
+      /* What is does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+      /* What it does: Overrides styles added when Yahoo's auto-senses a link. */
+      .yshortcuts a {
+        border-bottom: none !important;
+      }
+      /* What it does: Another work-around for iOS meddling in triggered links. */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+      }
+      p {
+        line-height: 1.4em;
+      }
+    </style>
+    <!-- Progressive Enhancements -->
+    <style type="text/css">
+      /* What it does: Hover styles for buttons */
+      .button-td,
+      .button-a {
+        transition: all 100ms ease-in;
+      }
+      .button-td:hover,
+      .button-a:hover {
+        background: red !important;
+        border-color: red !important;
+      }
+      .hidenSpacer {
+        display: none;
+      }
+      .ShowOnMobile {
+        display: none;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 520px) {
+        .hidenSpacer {
+          display: block;
+        }
+        .HideOnMobile {
+          display: none;
+        }
+        .ShowOnMobile {
+          display: block;
+        }
+        .email-container {
+          width: 100% !important;
+        }
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid,
+        .fluid-centered {
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* And center justify these ones. */
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+        .mainContent img {
+          width: 100%;
+          height: auto;
+          max-width: none;
+        }
+      }
+      .mainContent img {
+        width: 100%;
+        height: auto;
+      }
+      .receiverMail a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body
+    data-gr-ext-installed=""
+    data-new-gr-c-s-check-loaded="14.1014.0"
+    style="margin: 0"
+    width="100%"
+    yahoo="yahoo"
+  >
+    <table
+      bgcolor="#eb0029"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      height="100%"
+      style="border-collapse: collapse"
+      width="100%"
+    >
+      <tbody>
+        <tr>
+          <td style="vertical-align: top">
+            <center style="width: 100%">
+              <!-- Visually Hidden Preheader Text : BEGIN -->
+              <div
+                style="
+                  display: none;
+                  font-size: 15px;
+                  line-height: 1px;
+                  max-height: 0px;
+                  max-width: 0px;
+                  opacity: 0;
+                  overflow: hidden;
+                  mso-hide: all;
+                  font-family: sans-serif;
+                "
+              >
+                Rouge FM | Toujours plus Fantastique&nbsp;!
+              </div>
+              <!-- Visually Hidden Preheader Text : END --><!-- Email Header : BEGIN -->
+
+              <table align="center" class="email-container" width="520">
+                <tbody>
+                  <tr>
+                    <td style="padding: 20px 0 0; text-align: center">
+                      <a
+                        href="https://www.iheartradio.ca/rouge-fm/rouge-fm-montreal"
+                        name="header Rouge Montreal"
+                        target="_blank"
+                        xt="SPCLICK"
+                        ><img
+                          alt="107-3 Rouge logo"
+                          border="0"
+                          height="102.815"
+                          name="Energie_94.3_aut16_RENV.png"
+                          src="https://www.iheartradio.ca/image/policy:1.12881601:1593788632/logo-107-3-Rouge.png?w=1080&$p$w=756d196"
+                          title="107-3 Rouge logo"
+                          width="160"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Email Header : END --><!-- Email Body : BEGIN -->
+
+              <table
+                align="center"
+                bgcolor="#ffffff"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                class="email-container mainContent"
+                width="520"
+              >
+                <!-- Hero Image, Flush : BEGIN --><!-- Thumbnail Left, Text Right : BEGIN --><!-- Thumbnail Left, Text Right : END -->
+                <tbody>
+                  <tr>
+                    <td class="full-width-image">
+                      <img
+                        alt="Fairmont tremblant"
+                        border="0"
+                        contentupdated="true"
+                        height="360"
+                        name="PROMCR-4786 Rouge paye vos factures double 16-9.png"
+                        src="https://www.iheartradio.ca/image/policy:1.15335759:1622647743/concours-16x9.png?w=1920&$p$w=d0e8927"
+                        style="max-width: 100%; padding: 6px"
+                        title="Fairmont tremblant"
+                        width="640"
+                      />
+                    </td>
+                  </tr>
+                  <!-- Hero Image, Flush : END --><!-- 1 Column Text : BEGIN --><!-- Thumbnail Left, Text Right : BEGIN --><!-- Thumbnail Left, Text Right : END --><!-- Hero Image, Flush : END --><!-- 1 Column Text : BEGIN -->
+                  <tr></tr>
+                  <tr>
+                    <td
+                      style="
+                        padding: 10px 20px 40px;
+                        text-align: center;
+                        font-family: sans-serif;
+                        color: rgb(85, 85, 85);
+                        vertical-align: top;
+                      "
+                    >
+                      <h3>
+                        Votez pour votre saveur de votre crème glacée préférée
+                        aujourd&rsquo;hui pour choisir la saveur de l&rsquo;été
+                        Rouge FM !
+                      </h3>
+
+                      <p>
+                        <span style="font-size: 14px"
+                          >Ne manquez pas lundi prochain la chance de gagner 100
+                          $ de crème glacée chaque heure avec Top Glacier pour
+                          célébrer le début de l&rsquo;été ! Écoutez Rouge au
+                          travail avec Julie dès 8 h 20.</span
+                        >
+                      </p>
+
+                      <table
+                        align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="margin: auto"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              class="button-td"
+                              style="
+                                border-radius: 4px;
+                                background: #eb0029;
+                                text-align: center;
+                              "
+                            >
+                              <a
+                                class="button-a"
+                                href="https://www.iheartradio.ca/rouge-fm/rouge-fm-montreal/concours/gagnez-un-congelateur-rempli-de-creme-glacee-une-valeur-de-1200-1.15188884"
+                                name="Vacances fantastiques"
+                                style="
+                                  background: #eb0029;
+                                  border: 15px solid #eb0029;
+                                  padding: 0 10px;
+                                  color: #ffffff;
+                                  font-family: sans-serif;
+                                  text-align: center;
+                                  text-decoration: none;
+                                  display: block;
+                                  border-radius: 4px;
+                                  font-weight: bold;
+                                "
+                                xt="SPCLICK"
+                                ><!--[if mso
+                                  ]>&nbsp;&nbsp;&nbsp;&nbsp;<!
+                                [endif]-->
+                                Votez ici
+                                <!--[if mso
+                                  ]>&nbsp;&nbsp;&nbsp;&nbsp;<!
+                                [endif]--></a
+                              >
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!--
+						<table align="center" border="0" cellpadding="1" cellspacing="1" style="width: 300px;">
+							
+								<tr>
+									<td><a href="https://shopico.ca/" name="Hyperlink_20210407_153623829" target="_blank" xt="SPCLICK"><img alt="banner 300x250" border="0" height="250" name="Cont_0" src="https://www.iheartradio.ca/image/policy:1.14938318:1617824115/300x250-SHOPICO-Printemps21.png?w=300&$p$w=b529f33" title="banner 300x250" width="300" /></a></td>
+								</tr>
+							
+						</table>
+--><!-- Button : END -->
+                    </td>
+                  </tr>
+
+                  <!-- Hero Image, Flush : END --><!-- 1 Column Text : BEGIN --><!-- Thumbnail Left, Text Right : BEGIN --><!-- Thumbnail Left, Text Right : END --><!-- Hero Image, Flush : END --><!-- 1 Column Text : BEGIN -->
+
+                  <tr>
+                    <td class="full-width-image">
+                      <img
+                        alt="OETD"
+                        border="0"
+                        contentupdated="true"
+                        height="360"
+                        name="PROMCR-4786 Rouge paye vos factures double 16-9.png"
+                        src="https://www.iheartradio.ca/image/policy:1.15432563:1623871670/On-est-tous-debout-ete2021-16X9.png?a=16%3A9&$p$a=18b1d2b"
+                        style="max-width: 100%; padding: 6px"
+                        title="OETD"
+                        width="640"
+                      />
+                    </td>
+                  </tr>
+                  <!-- Hero Image, Flush : END --><!-- 1 Column Text : BEGIN --><!-- Thumbnail Left, Text Right : BEGIN --><!-- Thumbnail Left, Text Right : END --><!-- Hero Image, Flush : END --><!-- 1 Column Text : BEGIN -->
+                  <tr></tr>
+                  <tr>
+                    <td
+                      style="
+                        padding: 10px 20px 40px;
+                        text-align: center;
+                        font-family: sans-serif;
+                        color: rgb(85, 85, 85);
+                        vertical-align: top;
+                      "
+                    >
+                      <h3>
+                        ON EST TOUS DEBOUT tout l&rsquo;été avec Joël Legendre,
+                        Joanie Gonthier et Guillaume Pineault !<br />
+                      </h3>
+
+                      <p>
+                        <span style="font-size: 14px"
+                          >Dès lundi prochain à 5 h 55, vous pourrez entendre la
+                          nouvelle équipe d&rsquo;été d&rsquo;On est tous debout
+                          pour vous accompagner dans vos journées de travail et
+                          de vacances!</span
+                        >
+                      </p>
+
+                      <table
+                        align="center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        style="margin: auto"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              class="button-td"
+                              style="
+                                border-radius: 4px;
+                                background: #eb0029;
+                                text-align: center;
+                              "
+                            >
+                              <a
+                                class="button-a"
+                                href="https://www.iheartradio.ca/rouge-fm/rouge-fm-montreal/concours/gagnez-un-congelateur-rempli-de-creme-glacee-une-valeur-de-1200-1.15188884"
+                                name="Vacances fantastiques"
+                                style="
+                                  background: #eb0029;
+                                  border: 15px solid #eb0029;
+                                  padding: 0 10px;
+                                  color: #ffffff;
+                                  font-family: sans-serif;
+                                  text-align: center;
+                                  text-decoration: none;
+                                  display: block;
+                                  border-radius: 4px;
+                                  font-weight: bold;
+                                "
+                                xt="SPCLICK"
+                                ><!--[if mso
+                                  ]>&nbsp;&nbsp;&nbsp;&nbsp;<!
+                                [endif]-->
+                                Écoutez ici</a
+                              >
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr style="color: #ebebeb">
+                    <td
+                      align="center"
+                      style="padding: 20px 10px; vertical-align: center"
+                    >
+                      <table
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="100%"
+                      >
+                        <tbody>
+                          <tr>
+                            <td
+                              class="stack-column-center"
+                              style="vertical-align: center"
+                              width="50%"
+                            >
+                              &nbsp;
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      style="
+                                        padding: 0 10px;
+                                        text-align: center;
+                                        vertical-align: center;
+                                      "
+                                    >
+                                      <img
+                                        alt="Jay l'été"
+                                        border="0"
+                                        class="fluid"
+                                        height="240"
+                                        name="Jayl�t�2.png"
+                                        src="https://www.iheartradio.ca/image/policy:1.15335778:1622648010/Rouge-Jay-Ete-Instagram-FB-1080x1080.jpg?w=1080&$p$w=bc79212"
+                                        title="Jay l'été"
+                                        width="240"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td
+                                      class="center-on-narrow HideOnMobile"
+                                      style="
+                                        font-family: sans-serif;
+                                        color: rgb(85, 85, 85);
+                                        text-align: left;
+                                        vertical-align: top;
+                                      "
+                                    >
+                                      &nbsp;
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td class="stack-column-center">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                  <tr>
+                                    <td
+                                      class="center-on-narrow"
+                                      style="
+                                        font-family: sans-serif;
+                                        mso-height-rule: exactly;
+                                        color: #555555;
+                                        padding: 0 10px 10px 10px;
+                                        text-align: left;
+                                      "
+                                    >
+                                      <h3 style="margin-bottom: 0px">
+                                        <span
+                                          >Ne manquez pas le quatuor le plus
+                                          improbable de Jay l&rsquo;été !</span
+                                        >
+                                      </h3>
+
+                                      <p
+                                        style="
+                                          margin-top: 0.4em; /* [disabled]font-size: 10px; */
+                                        "
+                                      >
+                                        <span
+                                          >Pour la première de Christiane
+                                          Charrette à Jay l&rsquo;été, ses
+                                          invités n&rsquo;étaient nul autre que
+                                          les Denis Drolet pour venir mettre le
+                                          party en studio ! Ne manquez pas leur
+                                          conversation hilarante sur les sacres
+                                          !</span
+                                        >
+                                      </p>
+
+                                      <table
+                                        border="0"
+                                        cellpadding="0"
+                                        cellspacing="0"
+                                        class="center-on-narrow"
+                                        style="float: left"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              class="button-td"
+                                              style="
+                                                border-radius: 3px;
+                                                background: #eb0029;
+                                                text-align: center;
+                                              "
+                                            >
+                                              <a
+                                                class="button-a"
+                                                href="https://www.iheart.com/podcast/962-jay-lete-29867045/episode/les-denis-drolet-14-juin-83700645/"
+                                                name="Segment sam breton"
+                                                style="
+                                                  background: #eb0029;
+                                                  border: 15px solid #eb0029;
+                                                  padding: 0 10px;
+                                                  color: #ffffff;
+                                                  font-family: sans-serif;
+                                                  text-align: center;
+                                                  text-decoration: none;
+                                                  display: block;
+                                                  border-radius: 3px;
+                                                  font-weight: bold;
+                                                "
+                                                target="_blank"
+                                                xt="SPCLICK"
+                                                >Écoutez le podcast</a
+                                              >
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+
+                  <!-- Two Even Columns : END -->
+                </tbody>
+              </table>
+              <!-- Email Body : END --><!-- Email Footer : BEGIN -->
+
+              <table align="center" class="email-container" width="520">
+                <tbody>
+                  <tr>
+                    <td>
+                      <table
+                        align="center center"
+                        border="0"
+                        cellpadding="0"
+                        cellspacing="0"
+                      >
+                        <tbody>
+                          <tr>
+                            <td style="font-size: 20px; height: 20px">
+                              &nbsp;
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="15">&nbsp;</td>
+                            <td width="30">
+                              <a
+                                href="https://www.facebook.com/1073Rougefm/"
+                                name="footer Facebook"
+                                target="_blank"
+                                xt="SPCLICK"
+                                ><svg
+                                  fill="white"
+                                  height="2em"
+                                  stroke="white"
+                                  stroke-width="0"
+                                  viewbox="0 0 512 512"
+                                  width="2em"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                                  ></path>
+                                </svg>
+                              </a>
+                            </td>
+                            <td width="15">&nbsp;</td>
+                            <td width="30">
+                              <a
+                                href="https://www.instagram.com/107.3_rouge/"
+                                name="footer instagram"
+                                target="_blank"
+                                xt="SPCLICK"
+                                ><svg
+                                  fill="white"
+                                  height="2em"
+                                  stroke="white"
+                                  stroke-width="0"
+                                  viewbox="0 0 448 512"
+                                  width="2em"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                  ></path>
+                                </svg>
+                              </a>
+                            </td>
+                            <td width="15">&nbsp;</td>
+                            <td width="30">
+                              <a
+                                href="https://twitter.com/1073Rouge"
+                                name="footer Twitter"
+                                target="_blank"
+                                xt="SPCLICK"
+                                ><svg
+                                  fill="white"
+                                  height="2em"
+                                  stroke="white"
+                                  stroke-width="0"
+                                  viewbox="0 0 512 512"
+                                  width="2em"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                  ></path>
+                                </svg>
+                              </a>
+                            </td>
+                            <td width="15">&nbsp;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      style="
+                        padding: 40px 10px;
+                        width: 100%;
+                        font-size: 11px;
+                        font-family: sans-serif;
+                        mso-height-rule: exactly;
+                        line-height: 18px;
+                        text-align: center;
+                        color: #ffffff;
+                      "
+                    >
+                      <webversion
+                        style="
+                          color: #ffffff;
+                          text-decoration: underline;
+                          font-weight: bold;
+                        "
+                        ><a
+                          href="#SPCLICKTOVIEW"
+                          name="Hyperlink_20200403_090646880"
+                          style="color: #ffffff"
+                          target="_blank"
+                          xt="SPCLICKTOVIEW"
+                          ><b>Voir la version HTML de ce courriel</b></a
+                        ></webversion
+                      ><br />
+                      <br />
+                      Vous êtes abonné à 107.3 Rouge Montréal au moyen de votre
+                      adresse <span class="receiverMail">%%EMAIL%%</span>. Pour
+                      vous désabonner de l&#39;infolettre programmation de 107.3
+                      Rouge Montréal ou mettre à jour vos préférences,
+                      <unsubscribe
+                        style="color: #888888; text-decoration: underline"
+                        ><a
+                          href="#LPWEBFORMOPTOUT"
+                          name="Hyperlink_20200403_090621377"
+                          style="color: #ffffff"
+                          target="_blank"
+                          xt="LPWEBFORMOPTOUT"
+                          xtwebform="7402258"
+                          >cliquez ici</a
+                        ></unsubscribe
+                      >
+                      . Vous recevez ce message de 107.3 Rouge Montréal, une
+                      propriété de Bell Média. En visitant un de nos sites Web,
+                      vous avez demandé à recevoir des nouvelles au moyen de
+                      107.3 Rouge Montréal. Veuillez ne pas répondre à ce
+                      message en utilisant la fonction &laquo; Répondre à
+                      &raquo;.
+                      <a
+                        href="http://soutien.bell.ca/Facturation-et-comptes/Securite_et_confidentialite/Bell_et_votre_vie_privee"
+                        name="Politique de Bell sur la protection de la vie privee"
+                        style="color: #ffffff"
+                        target="_blank"
+                        xt="SPCLICK"
+                        >Politique de Bell sur la protection de la vie privée</a
+                      >.<br />
+                      <br />
+                      Bell Média inc. 1717, boul. René-Lévesque Est, Montréal
+                      (Québec) H2L 4T9 Canada.<br />
+                      &copy; 2020. Bell Média. Tous droits réservés.<br />
+                      <br />
+                      <a
+                        href="https://www.bellmedia.ca/fr/"
+                        name="Hyperlink_20200505_130908531"
+                        target="_blank"
+                        xt="SPCLICK"
+                        ><svg
+                          fill="none"
+                          height="50"
+                          viewbox="0 0 374 93"
+                          width="192"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M77.9537 55.0852C79.332 48.5431 84.1967 43.8267 91.3728 43.8267C98.5527 43.8267 103.341 48.0542 104.573 55.0852H77.9537ZM33.5614 76.7921C31.607 77.1397 29.2342 77.2161 27.2989 77.2161H15.9762V47.8633H26.1087C29.3033 47.8633 32.9201 48.2262 34.9972 48.7568C42.1041 50.6245 46.1778 55.6846 46.1778 62.4023C46.1778 69.3413 42.4268 75.1996 33.5612 76.7921H33.5614ZM15.9762 12.1484H20.2996C24.473 12.1484 27.7673 12.5989 30.1479 13.5118C34.8244 15.3295 37.0552 19.0225 37.0552 23.6588C37.0667 27.5656 35.5538 33.7333 27.276 35.4097C25.89 35.6848 23.8971 35.8375 21.0751 35.8375H15.9762V12.1484ZM119.186 52.7671C118.349 48.7037 116.737 45.3581 114.41 42.3221C109.649 36.0628 101.935 32.1178 91.4956 32.1178C75.266 32.1178 65.2872 43.0707 62.3308 54.6421C59.6853 46.4925 52.5784 40.9931 45.0721 38.6712C50.7201 34.5774 53.6765 28.7151 53.6765 22.0281C53.6765 15.8222 51.0809 10.1778 46.7346 6.49632C40.3572 1.09995 31.6567 0 20.9446 0H0V89.9523C5.93597 89.9523 12.0331 89.9217 17.9843 89.9523C23.2674 89.9753 28.4354 89.9332 33.2541 89.7463C48.5085 89.139 58.9442 81.5085 62.2807 70.044C63.4287 75.1462 65.6326 79.2975 68.5163 82.4441C74.3906 88.883 82.9066 91.3997 91.4766 91.3997C102.027 91.3997 109.664 88.3407 114.878 83.6816L107.418 74.9553C103.663 77.7735 98.833 79.4349 93.4114 79.4349C82.7838 79.4005 78.0958 72.7019 77.6695 66.2785H119.186V89.9523H134.736V0.446765H119.186V52.7671ZM145.117 89.9529H160.394V0.446947H145.117V89.9529Z"
+                            fill="white"
+                          ></path>
+                          <path
+                            d="M222.796 38.0115C222.796 37.4538 222.554 36.9766 222.305 36.9766C221.898 36.9766 221.483 37.2095 220.911 38.6836L204.343 76.4305H199.44L182.873 38.6836C182.546 37.9427 182.143 36.9766 181.567 36.9766C181.233 36.9766 180.999 37.2095 180.999 37.9427V89.6633H175.685V37.9427C175.685 34.4483 178.058 32.0195 181.402 32.0195C184.674 32.0195 186.628 34.0436 187.933 37.1369L201.898 69.2852L215.854 37.1369C217.002 34.6126 218.956 32.0195 222.554 32.0195C226.225 32.0195 228.102 34.6126 228.102 38.1032V89.6633H222.796L222.796 38.0115ZM296.02 54.4323C286.798 54.4323 281.573 61.2492 281.573 69.9451C281.573 78.5454 286.142 85.6984 295.783 85.6984C301.58 85.6984 305.412 83.7507 308.679 81.3943V66.0384C308.679 59.3856 303.538 54.4323 296.02 54.4323V54.4323ZM313.99 89.6662H309.086V88.6122C309.086 86.8288 307.612 87.1534 306.472 87.6385C303.454 89.0247 299.369 90.1551 295.452 90.1551C283.035 90.1551 276.259 81.5471 276.259 70.0252C276.259 58.6562 284.107 49.8763 295.783 49.8763C301.991 49.8763 306.145 51.9119 309.086 54.8295V31.7666H313.99V89.6662ZM323.243 50.6859H328.554V89.6662H323.243V50.6859ZM325.943 42.9678C323.581 42.9678 322.437 41.7648 322.437 39.401C322.437 37.0523 323.581 35.9064 325.943 35.9064C328.312 35.9064 329.375 37.0521 329.375 39.4008C329.375 41.7648 328.312 42.9676 325.943 42.9676V42.9678ZM355.252 54.1902C345.212 54.1902 340.232 61.58 340.232 70.4324C340.232 79.3649 345.296 85.6968 355.018 85.6968C359.671 85.6968 364.24 83.9936 367.423 82.2063V66.6097C367.423 58.8112 361.871 54.1902 355.252 54.1902V54.1902ZM372.649 50.6844V89.6648H367.995L367.911 89.3517C367.588 87.6406 366.283 87.6406 365.212 87.9616C363.503 88.4426 361.871 89.0232 360.151 89.5119C358.439 89.9168 356.646 90.2377 354.523 90.2377C342.605 90.2377 334.853 82.6035 334.853 70.5775C334.853 59.1281 342.359 49.6418 355.018 49.6418C360.654 49.6418 364.893 51.5856 367.665 54.7476V50.6844H372.649ZM240.205 66.3666H266.245C265.35 59.2136 261.184 54.0924 253.586 54.0924C246.325 54.0924 241.257 59.6185 240.205 66.3666ZM254.907 85.7788C260.128 85.7788 264.367 84.148 268.372 81.2266L270.817 85.1218C266.245 88.6124 261.104 90.3922 254.488 90.3922C241.841 90.3922 234.565 81.7878 234.565 70.0179C234.565 58.5533 242.409 49.6359 253.586 49.6359C264.206 49.6359 271.236 56.6895 271.801 67.0849C271.801 67.0849 272.046 70.1858 272.046 70.8199H240.036C240.286 79.5996 245.511 85.7788 254.907 85.7788"
+                            fill="white"
+                          ></path>
+                          <path
+                            d="M253.186 44.5581H249L257.883 32.4502H264.381L253.186 44.5581Z"
+                            fill="white"
+                          ></path>
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Email Footer : END -->
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <span
+        style="
+          color: rgb(85, 85, 85);
+          font-family: sans-serif;
+          background-color: rgb(255, 255, 255);
+        "
+      ></span>
+    </div>
+  </body>
+</html>
